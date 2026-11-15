@@ -43,12 +43,12 @@ MIN_PRICE = 0.00001
 MAX_PRICE = 9_999_999.99999
 HORIZON = 240
 
-MOMENTUM_WINDOW = 60       # minutes of price used for the drift estimate
-MOMENTUM_DAMP = 0.2        # damping applied to the drift over the horizon
-MOMENTUM_WEIGHT = 0.25
+MOMENTUM_WINDOW = 90       # minutes of price used for the drift estimate
+MOMENTUM_DAMP = 0.18       # damping applied to the drift over the horizon
+MOMENTUM_WEIGHT = 0.22
 REV_WINDOW = 1440          # minutes in the slow mean (24 hours)
-REV_PULL = 0.3             # share of the distance to the slow mean taken
-REV_WEIGHT = 0.75
+REV_PULL = 0.28            # share of the distance to the slow mean taken
+REV_WEIGHT = 0.78
 
 
 def price5(x: float) -> float:
